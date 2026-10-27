@@ -1,0 +1,4 @@
+const search=document.querySelector('#vocab-search'), topic=document.querySelector('#vocab-topic'), clear=document.querySelector('#vocab-clear'), count=document.querySelector('#vocab-count'), empty=document.querySelector('#vocab-empty');
+const groups=[...document.querySelectorAll('.vocab-group')];
+function filter(){const q=search.value.trim().toLowerCase();let shown=0;for(const group of groups){let inGroup=0;for(const row of group.querySelectorAll('.vocab-entry')){const matches=(!topic.value||group.dataset.topic===topic.value)&&row.textContent.toLowerCase().includes(q);row.hidden=!matches;if(matches){shown++;inGroup++;}}group.hidden=!inGroup;}count.textContent=`${shown} ${shown===1?'term':'terms'} shown`;empty.hidden=shown!==0;}
+search.addEventListener('input',filter);topic.addEventListener('change',filter);clear.addEventListener('click',()=>{search.value='';topic.value='';filter();search.focus();});filter();

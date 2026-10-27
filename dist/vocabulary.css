@@ -1,0 +1,22 @@
+.vocab-filters{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) auto;gap:24px;align-items:end;padding:8px 0 24px;border-bottom:1px solid var(--line)}
+.vocab-filters label{display:flex;flex-direction:column;gap:8px;font-size:13px}
+.vocab-filters input,.vocab-filters select{width:100%}
+.vocab-filters button{min-height:46px}
+#vocab-count{font-size:13px;color:var(--muted);margin:20px 0 0}
+.vocab-group{padding:40px 0 16px}
+.vocab-group-heading{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:24px}
+.vocab-group h2,.vocab-sources h2{font-size:24px;letter-spacing:-.5px}
+.text-link{text-decoration:underline;text-underline-offset:4px;font-size:13px;flex-shrink:0;display:inline-flex;align-items:center;min-height:44px}
+.vocab-group dl{margin:0}
+.vocab-entry{display:grid;grid-template-columns:minmax(130px,1fr) minmax(0,3fr);gap:32px;border-top:1px solid var(--line);padding:24px 0;scroll-margin-top:100px}
+.vocab-entry dt{font-weight:600;font-size:17px;overflow-wrap:anywhere}
+.vocab-entry dd{margin:0;max-width:760px}
+.vocab-entry p{margin:0}
+.vocab-entry .term-example{font-size:13px;color:var(--muted);margin-top:10px}
+.term-example span{font-weight:600;margin-right:8px}
+.vocab-sources{border-top:1px solid var(--line);padding:32px 0 40px;margin-top:24px}
+.vocab-sources p{max-width:650px;color:var(--muted)}
+.vocab-sources a{text-decoration:underline;text-underline-offset:3px}
+.vocab-sources ul{padding-left:20px;line-height:2}
+#vocab-empty{padding:48px 0}
+@media(max-width:650px){.vocab-filters{grid-template-columns:1fr;gap:18px}.vocab-filters button{justify-self:start}.vocab-group-heading{display:block}.vocab-group-heading h2{margin:0 0 8px}.vocab-entry{grid-template-columns:1fr;gap:10px;padding:22px 0}.vocab-group{padding-top:32px}}
