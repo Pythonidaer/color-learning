@@ -1,0 +1,30 @@
+{
+  "name": "Color Learning",
+  "mark": "C",
+  "accent": "#a52e47",
+  "pages": {
+    "index.html": {
+      "title": "Color vocabulary | Color Learning",
+      "headline": [
+        "Color",
+        "vocabulary."
+      ],
+      "description": "Explore color properties, palette relationships, visual hierarchy, accessibility, and the language of interface design.",
+      "subtitle": "Properties, palettes, contrast, and meaning.",
+      "kind": "VOCABULARY",
+      "image": "assets/previews/index-v1.png"
+    },
+    "notes.html": {
+      "title": "Color design notes | Color Learning",
+      "headline": [
+        "Color in",
+        "interface design."
+      ],
+      "description": "Read practical notes on color roles, visual hierarchy, accessibility, semantic tokens, components, and interaction states.",
+      "subtitle": "Roles, hierarchy, accessibility, and states.",
+      "kind": "DESIGN NOTES",
+      "image": "assets/previews/notes-v1.png"
+    }
+  },
+  "base_url": "https://pythonidaer.github.io/color-learning/"
+}
